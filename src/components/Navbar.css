@@ -2,7 +2,18 @@
     margin: 0;
     padding: 0;
   }
-  
+
+@font-face {
+    font-family: "Playfair Display";   /*Can be any text*/
+    src: local("AirbnbCerealLight"),
+        url("../assets/fonts/PlayfairDisplay.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Quicksand";   /*Can be any text*/
+    src: local("AirbnbCerealLight"),
+        url("../assets/fonts/Quicksand.ttf") format("truetype");
+}
 
 #logo{
     padding: 45px 0 35px 48px;
