@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Navbar from './components/Navbar'
 
-function App() {
+const App = () => {
+  let a = () => console.log("Hello World")
+  let buttons = [{key: 1, text: "Login / Signup", onClick: a}, {key: 2, text: "Courses", onClick: a}, {key: 3, text: "Donate", onClick: a}, {key: 4, text: "About", onClick: a}]
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          This is just some placeholder code to test the website
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar buttons={buttons}/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
