@@ -8,6 +8,11 @@
     src: local("AirbnbCerealLight"),
         url("../assets/fonts/PlayfairDisplay.ttf") format("truetype");
 }
+@font-face {
+    font-family: "Playfair Display Bold";   /*Can be any text*/
+    src: local("AirbnbCerealLight"),
+        url("../assets/fonts/PlayfairDisplay-Bold.ttf") format("truetype");
+}
 
 @font-face {
     font-family: "Quicksand";   /*Can be any text*/
@@ -15,12 +20,17 @@
         url("../assets/fonts/Quicksand.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "Quicksand Regular";   /*Can be any text*/
+    src: local("AirbnbCerealLight"),
+        url("../assets/fonts/Quicksand-Regular.ttf") format("truetype");
+}
+
 #logo{
     padding: 45px 0 35px 48px;
     color: #1b1b1b;
     font-size: 28px;
-    font-family: "Playfair Display";
-    font-weight: bold;
+    font-family: "Playfair Display Bold";
     
 }
 
@@ -38,7 +48,7 @@
     padding: 5px;
     margin: 39px 10px 20px 10px;
     font-size: 14px;
-    font-family: "Quicksand";
+    font-family: "Quicksand Regular";
     border: none;
     box-shadow: none;
     border: 2px solid #ffffff;
