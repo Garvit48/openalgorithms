@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+
+#logo{
+    padding: 45px 0 35px 48px;
+    color: #1b1b1b;
+    font-size: 28px;
+    font-family: "Playfair Display";
+    font-weight: bold;
+    
+}
+
+#navigation{
+    display: flex;
+    justify-content: space-between;
+
+}
+#navButtonsContainer{
+    margin-right: 100px;
+    display: flex;
+}
+.navButton{
+    background: #ffffff;
+    padding: 5px;
+    margin: 39px 10px 20px 10px;
+    font-size: 14px;
+    font-family: "Quicksand";
+    border: none;
+    box-shadow: none;
+    border: 2px solid #ffffff;
+    transition: all 0.2s ease-in;
+}
+
+.navButton:hover{
+    color: #F500A7;
+    border-bottom: 2px solid #F500A7;
+
+    transition: all 0.2s ease-in;
+}
+.navButton:focus{
+    color: #EC00F5;
+    border-bottom: 2px solid #EC00F5;
+}
+
+#profilePicture{
+    display: inline;
+    margin: 42px 0px 0px 36px;
+    object-fit: cover;
+    width: 45px;
+    height: 43px;
+    border-radius: 100%;
+}
