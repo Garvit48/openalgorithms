@@ -7,7 +7,7 @@ const Navbar = ({buttons}) => {
   return (
     <div>
       <nav id='navigation'>
-        <p id='logo'>OpenAlgorithms</p>
+        <p id='logo'>GarvitJoshi</p>
         <div id='navButtonsContainer'>
           {React.Children.toArray(
             buttons.map(button => <button className='navButton' id={button.key} onClick={button.onClick}> {button.text} </button>)
