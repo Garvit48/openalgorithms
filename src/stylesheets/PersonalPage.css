@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Manrope";
+    transition: "0.2s all ease-out";
+    -webkit-transition: all 0.2s ease;  
+    -moz-transition: all 0.2s ease;  
+    -o-transition: all 0.2s ease;  
+    -ms-transition: all 0.2s ease;  
+    
+}
+
+@font-face {
+    font-family: "Manrope";   /*Can be any text*/
+    src: local("AirbnbCerealLight"),
+        url("../assets/fonts/Manrope-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "ManropeBold";   /*Can be any text*/
+    src: local("AirbnbCerealLight"),
+        url("../assets/fonts/Manrope-Bold.ttf") format("truetype");
+}
+
+#themeSwitchButton {
+    position: fixed;
+    top: 55px;
+    right: 200px;
+    z-index: 10;
+    background: inherit;
+    border: none;
+    font-size: 22pt;
+}
+
+#buttonContainer {
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 200px;
+    z-index: 10;
+    flex-direction: column;
+}
+
+.themeButton {
+    background-color: rgba(255, 0, 245, 0.32);
+    border: 2px solid rgba(255, 0, 245, 0.61);
+    border-left: 0px;
+    width: 200px;
+    height:60px;
+    margin: 12px 0px;
+    font-family: "ManropeBold";
+    border-radius: 4px;
+    transition: 0.2s all ease-out;
+}
+
+.themeButton:hover {
+    background-color: rgba(255, 0, 245, 0.5);
+    transition: 0.2s all ease-out;
+    width: 240px;
+    height: 65px;
+}
+
+.inactivePage {
+    animation: hidePage 1s forwards;
+    animation-fill-mode: forwards;
+}
+@keyframes hidePage {
+    from {
+
+        transform: rotate(0deg);
+    }
+    to {
+
+        transform: rotate(90deg);
+    }
+}
+
+.activePage {
+    animation: showPage 1s forwards;
+    animation-fill-mode: forwards;
+}
+@keyframes showPage {
+    from{
+
+        transform: rotate(90deg);
+    }
+    to {
+
+        transform: rotate(0deg);
+    }
+}
+
+.qualificationIcon {
+    display: inline;
+    width: 35px;
+    height: 35px;
+    margin: 10px;
+}
+
+.activeButton {
+    background-color: rgba(255, 0, 245, 0.5);
+    transition: 0.2s all ease-out;
+    width: 240px;
+    height: 65px;
+}
+
+.link:hover {
+    filter: invert(50%);
+}
+
+.card {
+    display: flex;
+    margin: 0 44px 40px 0;
+    flex-direction: column;
+    width: 280px;
+    height: 260px;
+    text-overflow: clip;
+    border: 2px solid rgba(255, 0, 245);
+    font-family: "ManropeBold";
+    border-radius: 4px;
+    transition: 0.2s all ease-out;
+}
+
+.cardContainer:hover .card{
+    /* transform: rotateY(180deg); */
+    scale: 1.1;
+    height: 360px;
+    transition: 0.2s all ease-out;
+}
+
+.projectName {
+    margin: 16px 32px;
+    font-size: 16pt;
+    font-family: "ManropeBold";
+}
+
+.projectDesc {
+    width: 240px;
+    height: 150px;
+    margin: 0px 32px;
+    overflow-y: hidden;
+}
