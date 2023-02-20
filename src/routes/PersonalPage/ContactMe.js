@@ -1,9 +1,6 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { github } from '@fortawesome/free-solid-svg-icons'
-import { linkedin } from '@fortawesome/free-solid-svg-icons'
 
-const Home = ({ currentTheme }) => {
+const Home = ({ currentTheme , corner}) => {
 
   const pageStyle = {
     backgroundColor: currentTheme.primaryColor,
@@ -11,7 +8,10 @@ const Home = ({ currentTheme }) => {
     width: "100%",
     height: "100%",
     transition: "0.2s all ease-out",
-    zIndex: 1
+    zIndex: 1,
+    border: `2px solid ${currentTheme.secondaryColor}`,
+    transformOrigin: corner
+
   }
 
   const nameStyle = {
@@ -31,30 +31,49 @@ const Home = ({ currentTheme }) => {
     display: "flex",
     flexDirection: "column",
     marginTop: "175px",
-    marginLeft: "360px",
+    marginLeft: "420px",
     marginRight: "280px"
   }
 
   const paragraphStyle = {
     color: currentTheme.paragraphColor,
     fontFamily: "ManropeBold",
-    fontSize: 22,
+    fontSize: 21,
     marginTop: "60px"
   }
 
-  const linksSectionStyle = {
+  const linkSectionStyle = {
+    marginTop: "48px",
     display: "flex",
-    flexDirection: "column"
+    flexDirection: "row",
+  }
+
+  const linkStyle = {
+    fontSize: "32pt",
+    border: "none",
+    backgroundColor: "inherit"
+  }
+
+  const contactInfoStyle = {
+    display: "flex",
+    flexDirection: "column",
+    marginTop: "80px",
+    justifyContent: "space-between"
+  }
+
+  const contactInfoTextStyle = {
+    fontSize: "16pt",
+    color: currentTheme.secondaryColor
   }
 
   return (
     <div id="contactMePage" className="inactivePage" style={pageStyle}>
       <div style={contentStyle}>
         <p style={nameStyle}>Contact Me</p>
-        <p style={designationStyle}>Full Stack Developer</p>
-        <p style={paragraphStyle}>Hey, I'm Garvit. I am a Full Stack Developer. And now that you are here, feel free to explore.</p>
-        <div style={linksSectionStyle}>
-
+        <div style={contactInfoStyle}>
+        <p style={contactInfoTextStyle}>{currentTheme.icons.email}joshi.garvit22@gmail.com </p>
+        <br />
+        <p style={contactInfoTextStyle}>{currentTheme.icons.phone}+91-7037082789 </p>
         </div>
       </div>
     </div>

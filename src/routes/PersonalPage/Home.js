@@ -1,8 +1,6 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-
-const Home = ({ currentTheme }) => {
+const Home = ({ currentTheme , corner}) => {
 
   const pageStyle = {
     backgroundColor: currentTheme.primaryColor,
@@ -10,7 +8,9 @@ const Home = ({ currentTheme }) => {
     width: "100%",
     height: "100%",
     transition: "0.2s all ease-out",
-    zIndex: 3
+    zIndex: 4,
+    border: `2px solid ${currentTheme.secondaryColor}`,
+    transformOrigin: corner
   }
 
   const nameStyle = {
@@ -30,30 +30,38 @@ const Home = ({ currentTheme }) => {
     display: "flex",
     flexDirection: "column",
     marginTop: "175px",
-    marginLeft: "360px",
+    marginLeft: "420px",
     marginRight: "280px"
   }
 
   const paragraphStyle = {
     color: currentTheme.paragraphColor,
     fontFamily: "ManropeBold",
-    fontSize: 22,
+    fontSize: 21,
     marginTop: "60px"
   }
 
-  const linksSectionStyle = {
+  const linkSectionStyle = {
+    marginTop: "48px",
     display: "flex",
-    flexDirection: "column"
+    flexDirection: "row",
+  }
+
+  const linkStyle = {
+    fontSize: "32pt",
+    border: "none",
+    backgroundColor: "inherit"
   }
 
   return (
-    <div id="homePage" className="" style={pageStyle}>
+    <div id="homePage" className="activePage" style={pageStyle}>
       <div style={contentStyle}>
         <p style={nameStyle}>Garvit Joshi</p>
         <p style={designationStyle}>Full Stack Developer</p>
-        <p style={paragraphStyle}>Hey, I'm Garvit. I am a Full Stack Developer. And now that you are here, feel free to explore.</p>
-        <div style={linksSectionStyle}>
-
+        <p style={paragraphStyle}>Hey, I'm Garvit. I am a Full Stack Developer with experience in front-end technologies like HTML, CSS, ReactJS (like this website), Flutter, and backend technologies like NodeJS, Python, Java, Dart and others.</p>
+        <div style={linkSectionStyle}>
+        <button className='link' style={linkStyle}>{currentTheme.icons.github}</button>
+        <button className='link' style={linkStyle}>{currentTheme.icons.linkedin}</button>
         </div>
       </div>
     </div>

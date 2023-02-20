@@ -1,5 +1,5 @@
 import React from 'react'
-import './Navbar.css'
+import '../stylesheets/Navbar.css'
 import Hr from './Hr'
 //buttons  = [text, command]
 const Navbar = ({buttons}) => {
