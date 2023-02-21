@@ -21,12 +21,6 @@ const Home = ({ currentTheme , corner}) => {
     color: currentTheme.secondaryColor ,
   }
 
-  const designationStyle = {
-    color: currentTheme.subtextColor,
-    fontSize: 24,
-    fontFamily: "ManropeBold"
-  }
-
   const contentStyle = {
     display: "flex",
     flexDirection: "column",
