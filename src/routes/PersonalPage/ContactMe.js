@@ -35,25 +35,6 @@ const Home = ({ currentTheme , corner}) => {
     marginRight: "280px"
   }
 
-  const paragraphStyle = {
-    color: currentTheme.paragraphColor,
-    fontFamily: "ManropeBold",
-    fontSize: 21,
-    marginTop: "60px"
-  }
-
-  const linkSectionStyle = {
-    marginTop: "48px",
-    display: "flex",
-    flexDirection: "row",
-  }
-
-  const linkStyle = {
-    fontSize: "32pt",
-    border: "none",
-    backgroundColor: "inherit"
-  }
-
   const contactInfoStyle = {
     display: "flex",
     flexDirection: "column",

@@ -1,6 +1,4 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
 
 const Home = ({ currentTheme, corner }) => {
 
