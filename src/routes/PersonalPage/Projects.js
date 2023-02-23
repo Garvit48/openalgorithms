@@ -24,7 +24,7 @@ const Home = ({ currentTheme, corner }) => {
     {
       name: "Dijkstra's Shortest Path Algorithm Playground",
       description: "A web app built using vanilla Javascript that allows users to create nodes and find the shortest path between any two nodes and inspect the network.",
-      showcaseLink: "https://curious-dieffenbachia-68f3dc.netlify.app/",
+      showcaseLink: "https://mellifluous-palmier-f666ca.netlify.app",
       githubLink: "https://github.com/Garvit48/dijkstras_algorithm",
     },
     {
