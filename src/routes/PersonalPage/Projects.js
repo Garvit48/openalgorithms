@@ -78,7 +78,8 @@ const Home = ({ currentTheme, corner }) => {
     fontSize: "32pt",
     border: "none",
     backgroundColor: "inherit",
-    margin: "20px"
+    margin: "20px",
+    zIndex: 6
   }
 
   const projectNameStyle = {
@@ -95,10 +96,10 @@ const Home = ({ currentTheme, corner }) => {
       <div style={contentStyle}>
         {projects.map(project => 
         <div className="cardContainer">
-        <div className="card" onClick={() => window.open(project.showcaseLink, "_blank", "noreferrer")}>
+        <div className="card" onClick={() => (project.showcaseLink === "") ? alert("No showcase link available foir this project yet") : window.open(project.githubLink, "_blank", "noreferrer")}>
             <p className="projectName" style={projectNameStyle}>{project.name}</p>
             <p className="projectDesc" style={projectDescStyle}>{project.description}</p>
-            <button className="link" style={logoStyle} onClick={() => (project.githubLink === "") ? window.alert("No preview available yet") : window.open(project.githubLink, "_blank", "noreferrer")}>{currentTheme.icons.github}</button>.
+            <button className="link" style={logoStyle} onClick={() => (project.githubLink === "") ? alert("No github link available foir this project yet") : window.open(project.githubLink, "_blank", "noreferrer")}>{currentTheme.icons.github}</button>.
           </div>
         </div>)}
       </div>
