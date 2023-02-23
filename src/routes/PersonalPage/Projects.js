@@ -6,8 +6,8 @@ const Home = ({ currentTheme, corner }) => {
     {
       name: "OpenAlgorithms",
       description: "An open source website made using the MERN Stack (MongoDB, ExpressJS, NodeJS, ReactJS) for developers as a learning and experimenting playground for developers, by developers.",
-      showcaseLink: "",
-      githubLink: "https://openalgorithms.in",
+      showcaseLink: "https://openalgorithms.in",
+      githubLink: "https://github.com/Garvit48/openalgorithms",
     },
 
     {
@@ -96,7 +96,7 @@ const Home = ({ currentTheme, corner }) => {
       <div style={contentStyle}>
         {projects.map(project => 
         <div className="cardContainer">
-        <div className="card" onClick={() => (project.showcaseLink === "") ? alert("No showcase link available foir this project yet") : window.open(project.githubLink, "_blank", "noreferrer")}>
+        <div className="card" onClick={() => (project.showcaseLink === "") ? alert("No showcase link available foir this project yet") : window.open(project.showcaseLink, "_blank", "noreferrer")}>
             <p className="projectName" style={projectNameStyle}>{project.name}</p>
             <p className="projectDesc" style={projectDescStyle}>{project.description}</p>
             <button className="link" style={logoStyle} onClick={() => (project.githubLink === "") ? alert("No github link available foir this project yet") : window.open(project.githubLink, "_blank", "noreferrer")}>{currentTheme.icons.github}</button>.
