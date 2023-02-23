@@ -27,6 +27,7 @@ const Home = ({ currentTheme, corner }) => {
       showcaseLink: "https://mellifluous-palmier-f666ca.netlify.app",
       githubLink: "https://github.com/Garvit48/dijkstras_algorithm",
     },
+    
     {
       name: "Clustering App (Python)",
       description: "A web app built using vanilla Javascript that allows users to create nodes and find find the shortest path Clustering App (Python)",
