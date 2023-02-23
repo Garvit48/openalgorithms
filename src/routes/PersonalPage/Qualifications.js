@@ -1,15 +1,15 @@
 import React from 'react'
-import cssLogo from '../../assets/icons/css.svg'
-import htmlLogo from '../../assets/icons/html.svg'
-import reactLogo from '../../assets/icons/react.svg'
-import nodejsLogo from '../../assets/icons/nodejs.svg'
-import expressLogo from '../../assets/icons/expressjs.svg'
-import javaLogo from '../../assets/icons/java.svg'
+// import cssLogo from '../../assets/icons/css.svg'
+// import htmlLogo from '../../assets/icons/html.svg'
+// import reactLogo from '../../assets/icons/react.svg'
+// import nodejsLogo from '../../assets/icons/nodejs.svg'
+// import expressLogo from '../../assets/icons/expressjs.svg'
+// import javaLogo from '../../assets/icons/java.svg'
 // import flutterLogo from '../../assets/icons/flutter.svg'
-import dartLogo from '../../assets/icons/dart.svg'
-import cLogo from '../../assets/icons/c.svg'
-import cppLogo from '../../assets/icons/cpp.svg'
-import csLogo from '../../assets/icons/cs.svg'
+// import dartLogo from '../../assets/icons/dart.svg'
+// import cLogo from '../../assets/icons/c.svg'
+// import cppLogo from '../../assets/icons/cpp.svg'
+// import csLogo from '../../assets/icons/cs.svg'
 // import postmanLogo from '../../assets/icons/postman.svg'
 // import pythonLogo from '../../assets/icons/python.svg'
 // import mongodbLogo from '../../assets/icons/mongodb.svg'
@@ -17,14 +17,14 @@ import csLogo from '../../assets/icons/cs.svg'
 // import gitLogo from '../../assets/icons/git.svg'
 // import githubLogo from '../../assets/icons/github.svg'
 // import unityLogo from '../../assets/icons/unity.svg'
-import phpLogo from '../../assets/icons/php.svg'
+// import phpLogo from '../../assets/icons/php.svg'
 // import latexLogo from '../../assets/icons/latex.svg'
 // import figmaLogo from '../../assets/icons/figma.svg'
 // import canvaLogo from '../../assets/icons/canva.svg'
 // import azureLogo from '../../assets/icons/azure.svg'
-import bootstrapLogo from '../../assets/icons/bootstrap.svg'
+// import bootstrapLogo from '../../assets/icons/bootstrap.svg'
 // import firebaseLogo from '../../assets/icons/firebase.svg'
-import jsLogo from '../../assets/icons/js.svg'
+// import jsLogo from '../../assets/icons/js.svg'
 // import awsLogo from '../../assets/icons/aws.svg'
 
 
@@ -70,38 +70,52 @@ const Home = ({ currentTheme, corner }) => {
     flexDirection: "row",
     marginTop: "40px"
   }
+
+  const langTextStyle = {
+    color: currentTheme.accentColor,
+    fontSize: 18,
+    marginTop: "20px",
+    marginLeft: "20px",
+    fontFamily: "ManropeBold"
+  }
   return (
     <div id="qualificationsPage" className="inactivePage" style={pageStyle}>
       <div style={contentStyle}>
-        <p style={titleStyle}>Qualifications</p>
+        <p style={titleStyle}>Technologies</p>
         <div style={flexboxStyle}>
-        <p style={textStyle}>Programming Languages:</p>
-        <img className="qualificationIcon" alt="" src={javaLogo} />
-        <img className="qualificationIcon" alt="" src={jsLogo} />
-        <img className="qualificationIcon" alt="" src={cLogo} />
-        <img className="qualificationIcon" alt="" src={cppLogo} />
-        <img className="qualificationIcon" alt="" src={csLogo} />
-        <img className="qualificationIcon" alt="" src={dartLogo} />
-        <img className="qualificationIcon" alt="" src={phpLogo} />
+          <p style={textStyle}>Programming Languages:</p>
+          <p style={langTextStyle}>Java, Javascript, C, C++, C#, Python, Dart, PHP</p>
+          {/* <img className="qualificationIcon" alt="" src={javaLogo} />
+          <img className="qualificationIcon" alt="" src={jsLogo} />
+          <img className="qualificationIcon" alt="" src={cLogo} />
+          <img className="qualificationIcon" alt="" src={cppLogo} />
+          <img className="qualificationIcon" alt="" src={csLogo} />
+          <img className="qualificationIcon" alt="" src={dartLogo} />
+          <img className="qualificationIcon" alt="" src={phpLogo} /> */}
         </div>
         <div style={flexboxStyle}>
-        <p style={textStyle}>Web Technologies:</p>
-        <img className="qualificationIcon" alt="" src={nodejsLogo} />
-        <img className="qualificationIcon" alt="" src={expressLogo} />
-        <img className="qualificationIcon" alt="" src={reactLogo} />
-        <img className="qualificationIcon" alt="" src={htmlLogo} />
-        <img className="qualificationIcon" alt="" src={cssLogo} />
-        <img className="qualificationIcon" alt="" src={bootstrapLogo} />
+          <p style={textStyle}>Web Technologies:</p>
+          <p style={langTextStyle}>NodeJS, ReactJS, HTML, CSS, Bootstrap</p>
+          {/* <img className="qualificationIcon" alt="" src={nodejsLogo} />
+          <img className="qualificationIcon" alt="" src={expressLogo} />
+          <img className="qualificationIcon" alt="" src={reactLogo} />
+          <img className="qualificationIcon" alt="" src={htmlLogo} />
+          <img className="qualificationIcon" alt="" src={cssLogo} />
+          <img className="qualificationIcon" alt="" src={bootstrapLogo} /> */}
         </div>
         <div style={flexboxStyle}>
-        <p style={textStyle}>Programming Languages: </p>
-        <img className="qualificationIcon" alt="" src={javaLogo} />
-        <img className="qualificationIcon" alt="" src={jsLogo} />
-        <img className="qualificationIcon" alt="" src={cLogo} />
-        <img className="qualificationIcon" alt="" src={cppLogo} />
-        <img className="qualificationIcon" alt="" src={csLogo} />
-        <img className="qualificationIcon" alt="" src={dartLogo} />
-        <img className="qualificationIcon" alt="" src={phpLogo} />
+        <p style={textStyle}>Other Technologies:  </p>
+        <p style={langTextStyle}>Flutter, MongoDB, MySQL, Firebase, Git, Github</p>
+        {/* <img className="qualificationIcon" alt="" src={flutterLogo} />
+        <img className="qualificationIcon" alt="" src={mongodbLogo} />
+        <img className="qualificationIcon" alt="" src={mysqlLogo} /> */}
+        </div>
+        <div style={flexboxStyle}>
+        <p style={textStyle}>Other Technologies:  </p>
+        <p style={langTextStyle}>AWS, AZURE, Figma, Canva, AZURE DevOpps, LateX, Unity</p>
+        {/* <img className="qualificationIcon" alt="" src={flutterLogo} />
+        <img className="qualificationIcon" alt="" src={mongodbLogo} />
+        <img className="qualificationIcon" alt="" src={mysqlLogo} /> */}
         </div>
       </div>
     </div>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dijkstra's Algorithm</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: "JetBrains Mono";
+        font-size: 12pt;
+        background-color: rgb(28, 28, 28);
+        color: white;
+    }
+    h1 {
+        font-size: 40pt;
+        margin-top: 40px;
+        margin-left: 40px;
+    }
+
+    h2{
+        font-size: 20pt;
+        margin-left: 40px;
+    }
+
+    h3{
+        font-size: 20pt;
+        margin-left: 40px;
+        margin-top: 50px;
+    }
+    #info-container{
+        position: fixed;
+        display: inline-block;
+        max-width: 500px;
+        top: 0;
+        right: 0;
+        background-color: inherit;
+        width: auto;
+        height: auto;
+        border: 2px solid #f4f4f4;
+        transition: width 0.4s;
+    }
+    table {
+        margin-top: 25px;
+        padding-bottom: 40px;
+    }
+
+    table th {
+        padding: 10px 40px 20px 40px;
+    }
+
+    table td {
+        padding: 10px 40px;
+    }
+    #container {
+        display: inline-flex;
+        flex-direction: row;
+    }
+    input {
+        margin: 10px;
+        width: auto;
+        padding: 5px 10px;
+        height: 50;
+        border: 2px solid rgb(154, 154, 154);
+        border-radius: 4px;
+    }
+
+    button {
+        margin: 10px;
+        width: 200px;
+        height: 50px;
+        background-color: inherit;
+        border: 2px solid rgb(252, 29, 189);
+        border-radius: 4px;
+        color: rgb(252, 29, 189);
+        transition: background-color 0.2s, color 0.2s;
+
+    }
+
+    button:hover {
+        background-color: rgb(252, 29, 189);
+        color: #f4f4f4;
+    }
+</style>
+<body>
+    <canvas id="canvas" width="800" height="600" style="border: 1px solid #f4f4f4;"></canvas>
+    <div id="info-container"></div>
+    <div id="container">
+        <input type="text" id="startNode" placeholder="Start Node">
+        <input type="text" id="destNode" placeholder="Destination Node">
+        <button type="button" onclick="process()">Get Shortest Path</button>
+        <button type="button" onclick="resetGraph()">Reset Graph</button>
+    </div>
+    
+</body>
+<script src="DSPA.js"></script>
+<script src="Node.js"></script>
+<script src="Line.js"></script>
+<script src="setup.js"></script>
+<script src="eventHandlers.js"></script>
+<script src="index.js"></script>
+</html>

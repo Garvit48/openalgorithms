@@ -60,8 +60,8 @@ const Home = ({ currentTheme , corner}) => {
         <p style={designationStyle}>Full Stack Developer</p>
         <p style={paragraphStyle}>Hey, I'm Garvit. I am a Full Stack Developer with experience in front-end technologies like HTML, CSS, ReactJS (like this website), Flutter, and backend technologies like NodeJS, Python, Java, Dart and others.</p>
         <div style={linkSectionStyle}>
-        <button className='link' style={linkStyle}>{currentTheme.icons.github}</button>
-        <button className='link' style={linkStyle}>{currentTheme.icons.linkedin}</button>
+        <button className='link' style={linkStyle} onClick={() => window.open("https://github.com/Garvit48")}>{currentTheme.icons.github}</button>
+        <button className='link' style={linkStyle} onClick={() => window.open("https://www.linkedin.com/in/garvit-joshi-55853b263/")}>{currentTheme.icons.linkedin}</button>
         </div>
       </div>
     </div>

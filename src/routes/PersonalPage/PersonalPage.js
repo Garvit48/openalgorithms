@@ -108,7 +108,7 @@ const PersonalPage = () => {
       <button id="themeSwitchButton" onClick={toggleTheme}>{currentTheme.icons.themeSwitcher}</button>
       <div id="buttonContainer">
       <button id="homeButton" className="themeButton activeButton" style={themeButtonStyle} onClick={(event) => switchPage(event, "homePage")}>Home</button>
-      <button id="qualificationsButton" className="themeButton" style={themeButtonStyle} onClick={(event) => switchPage(event, "qualificationsPage")}>Qualifications</button>
+      <button id="qualificationsButton" className="themeButton" style={themeButtonStyle} onClick={(event) => switchPage(event, "qualificationsPage")}>Technologies</button>
         <button id="projectsButton" className="themeButton" style={themeButtonStyle} onClick={(event) => switchPage(event, "projectsPage")}>Projects</button>
         
         <button id="contactMeButton" className="themeButton" style={themeButtonStyle} onClick={(event) => switchPage(event, "contactMePage")}>Contact Me</button>

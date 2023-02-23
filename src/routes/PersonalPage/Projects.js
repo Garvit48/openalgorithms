@@ -6,37 +6,37 @@ const Home = ({ currentTheme, corner }) => {
     {
       name: "OpenAlgorithms",
       description: "An open source website made using the MERN Stack (MongoDB, ExpressJS, NodeJS, ReactJS) for developers as a learning and experimenting playground for developers, by developers.",
-      showcaseLink: "www.youtube.com",
+      showcaseLink: "",
       githubLink: "https://openalgorithms.in",
     },
     {
       name: "Cluster App (Flutter)",
       description: "A communications app built using Dart, Flutter and Firebase that enables secure internal communication between members of an organization. The app also enables management of members via groups managed by the administrators of the organization.",
-      showcaseLink: "www.youtube.com",
+      showcaseLink: "",
       githubLink: "https://github.com/Garvit48/flutter_chat_app",
     },
     {
       name: "Python based peer-to-peer chat app",
       description: "An app built using Python that utilizes sockets for communication between two devices. The app supports communication with multiple devices that can be saved by their name and also locally stores the previous coversations between two users.",
-      showcaseLink: "www.youtube.com",
+      showcaseLink: "",
       githubLink: "",
     },
     {
       name: "Dijkstra's Shortest Path Algorithm Playground",
-      description: "A web app built using vanilla Javascript that allows users to create nodes and find find the shortest path between any two nodes using said algorithm. The app also allows users to inspect individual nodes and see their properties.",
-      showcaseLink: "www.youtube.com",
+      description: "A web app built using vanilla Javascript that allows users to create nodes and find the shortest path between any two nodes and inspect the network.",
+      showcaseLink: "",
       githubLink: "https://github.com/Garvit48/dijkstras_algorithm",
     },
     {
       name: "Clustering App (Python)",
       description: "A web app built using vanilla Javascript that allows users to create nodes and find find the shortest path Clustering App (Python)",
-      showcaseLink: "www.youtube.com",
+      showcaseLink: "",
       githubLink: "https://github.com/Garvit48/clusteringAlgorithm",
     },
     {
       name: "Linear Regression Visualizer",
       description: "A python based program that takes a set of points or a data file as an input and displays the line of best on a graph using the matplotlib module.",
-      showcaseLink: "www.youtube.com",
+      showcaseLink: "",
       githubLink: "https://github.com/Garvit48/linear_regression_app",
     }
   ]
@@ -94,7 +94,7 @@ const Home = ({ currentTheme, corner }) => {
         <div className="card" onClick={() => window.open(project.showcaseLink, "_blank", "noreferrer")}>
             <p className="projectName" style={projectNameStyle}>{project.name}</p>
             <p className="projectDesc" style={projectDescStyle}>{project.description}</p>
-            <button className="link" style={logoStyle} onClick={() => window.open(project.githubLink, "_blank", "noreferrer")}>{currentTheme.icons.github}</button>.
+            <button className="link" style={logoStyle} onClick={() => project.githubLink === "" ? window.open(project.githubLink, "_blank", "noreferrer") : window.alert("No preview available yet")}>{currentTheme.icons.github}</button>.
           </div>
         </div>)}
       </div>
