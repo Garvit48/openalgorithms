@@ -51,7 +51,7 @@ const themes = {
 }
 const PersonalPage = () => {
   useEffect(() => {
-    docuemnt.title = "Garvit Joshi";
+    document.title = "Garvit Joshi";
   });
   const [currentTheme, setTheme] = useState(themes.light);
 

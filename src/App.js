@@ -4,7 +4,7 @@ import Navbar from './components/Navbar'
 
 const App = () => {
   useEffect(() => {
-    docuemnt.title = "OpenAlgorithms : Knowledge is open source";
+    document.title = "OpenAlgorithms : Knowledge is open source";
   });
   let a = () => console.log("Hello World")
   let buttons = [{key: 1, text: "Login / Signup", onClick: a}, {key: 2, text: "Courses", onClick: a}, {key: 3, text: "Donate", onClick: a}, {key: 4, text: "About", onClick: a}]
