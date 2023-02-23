@@ -4,6 +4,7 @@ import Home from './Home'
 import Projects from './Projects'
 import ContactMe from './ContactMe'
 import Qualifications from './Qualifications'
+import { useEffect } from 'react'
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMoon } from '@fortawesome/free-solid-svg-icons'
@@ -49,6 +50,9 @@ const themes = {
   }
 }
 const PersonalPage = () => {
+  useEffect(() => {
+    docuemnt.title = "Garvit Joshi";
+  });
   const [currentTheme, setTheme] = useState(themes.light);
 
   // const removeFromView = pageID  => {
