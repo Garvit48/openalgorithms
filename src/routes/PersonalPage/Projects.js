@@ -24,7 +24,7 @@ const Home = ({ currentTheme, corner }) => {
     {
       name: "Dijkstra's Shortest Path Algorithm Playground",
       description: "A web app built using vanilla Javascript that allows users to create nodes and find the shortest path between any two nodes and inspect the network.",
-      showcaseLink: "",
+      showcaseLink: "https://curious-dieffenbachia-68f3dc.netlify.app/",
       githubLink: "https://github.com/Garvit48/dijkstras_algorithm",
     },
     {
@@ -94,7 +94,7 @@ const Home = ({ currentTheme, corner }) => {
         <div className="card" onClick={() => window.open(project.showcaseLink, "_blank", "noreferrer")}>
             <p className="projectName" style={projectNameStyle}>{project.name}</p>
             <p className="projectDesc" style={projectDescStyle}>{project.description}</p>
-            <button className="link" style={logoStyle} onClick={() => project.githubLink === "" ? window.open(project.githubLink, "_blank", "noreferrer") : window.alert("No preview available yet")}>{currentTheme.icons.github}</button>.
+            <button className="link" style={logoStyle} onClick={() => (project.githubLink === "") ? window.alert("No preview available yet") : window.open(project.githubLink, "_blank", "noreferrer")}>{currentTheme.icons.github}</button>.
           </div>
         </div>)}
       </div>
