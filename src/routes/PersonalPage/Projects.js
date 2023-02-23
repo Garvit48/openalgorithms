@@ -9,12 +9,14 @@ const Home = ({ currentTheme, corner }) => {
       showcaseLink: "",
       githubLink: "https://openalgorithms.in",
     },
+
     {
-      name: "Cluster App (Flutter)",
-      description: "A communications app built using Dart, Flutter and Firebase that enables secure internal communication between members of an organization. The app also enables management of members via groups managed by the administrators of the organization.",
-      showcaseLink: "",
-      githubLink: "https://github.com/Garvit48/flutter_chat_app",
+      name: "Dijkstra's Shortest Path Algorithm Playground",
+      description: "A web app built using vanilla Javascript that allows users to create nodes and find the shortest path between any two nodes and inspect the network.",
+      showcaseLink: "https://mellifluous-palmier-f666ca.netlify.app",
+      githubLink: "https://github.com/Garvit48/dijkstras_algorithm",
     },
+
     {
       name: "Python based peer-to-peer chat app",
       description: "An app built using Python that utilizes sockets for communication between two devices. The app supports communication with multiple devices that can be saved by their name and also locally stores the previous coversations between two users.",
@@ -22,11 +24,12 @@ const Home = ({ currentTheme, corner }) => {
       githubLink: "",
     },
     {
-      name: "Dijkstra's Shortest Path Algorithm Playground",
-      description: "A web app built using vanilla Javascript that allows users to create nodes and find the shortest path between any two nodes and inspect the network.",
-      showcaseLink: "https://mellifluous-palmier-f666ca.netlify.app",
-      githubLink: "https://github.com/Garvit48/dijkstras_algorithm",
+      name: "Cluster App (Flutter)",
+      description: "A communications app built using Dart, Flutter and Firebase that enables secure internal communication between members of an organization. The app also enables management of members via groups managed by the administrators of the organization.",
+      showcaseLink: "",
+      githubLink: "https://github.com/Garvit48/flutter_chat_app",
     },
+    
     
     {
       name: "Clustering App (Python)",
