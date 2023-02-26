@@ -111,8 +111,8 @@ const Home = ({ currentTheme, corner }) => {
         <img className="qualificationIcon" alt="" src={mysqlLogo} /> */}
         </div>
         <div style={flexboxStyle}>
-        <p style={textStyle}>Other Technologies:  </p>
-        <p style={langTextStyle}>AWS, AZURE, Figma, Canva, AZURE DevOpps, LateX, Unity</p>
+        <p style={textStyle}>Tools:  </p>
+        <p style={langTextStyle}>AWS, AZURE, Figma, Canva, AZURE DevOpps, LateX, Unity Engine, Postman</p>
         {/* <img className="qualificationIcon" alt="" src={flutterLogo} />
         <img className="qualificationIcon" alt="" src={mongodbLogo} />
         <img className="qualificationIcon" alt="" src={mysqlLogo} /> */}
